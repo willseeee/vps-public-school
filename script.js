@@ -50,6 +50,47 @@ if (navToggle && navMenu) {
   });
 }
 
+// Hero Slider
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.slider-dot');
+let currentSlide = 0;
+let slideInterval;
+
+function initSlider() {
+  if (slides.length === 0) return;
+  
+  slides[0].classList.add('active');
+  if(dots.length > 0) dots[0].classList.add('active');
+  
+  slideInterval = setInterval(nextSlide, 5000);
+  
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      clearInterval(slideInterval);
+      goToSlide(index);
+      slideInterval = setInterval(nextSlide, 5000);
+    });
+  });
+}
+
+function nextSlide() {
+  goToSlide(currentSlide + 1);
+}
+
+function goToSlide(n) {
+  slides[currentSlide].classList.remove('active');
+  if(dots.length > 0) dots[currentSlide].classList.remove('active');
+  
+  currentSlide = (n + slides.length) % slides.length;
+  
+  slides[currentSlide].classList.add('active');
+  if(dots.length > 0) dots[currentSlide].classList.add('active');
+}
+
+// Initialize
+initSlider();
+
+// Reveal animations
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
     (entries) => {
