@@ -77,7 +77,7 @@
           </div>
         </a>
         <div class="header-actions">
-          <a class="button button--sm" href="#" target="_blank" rel="noreferrer">Enroll Now</a>
+          <a href="registration.html" class="button button--sm">Enroll Now</a>
           <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
             <span></span>
             <span></span>
@@ -102,29 +102,31 @@
               <a href="about.html#manager">Manager Message</a>
               <a href="about.html#principal">Principal Message</a>
               <a href="about.html#society">VPS Siksha Samity</a>
-              <a href="about.html#disclosure">Mandatory Public Disclosure</a>
+              <a href="about.html#disclosure">Public Disclosure</a>
             </div>
           </div>
           <div class="nav-item nav-item--has-dropdown">
             <a class="nav-link" data-nav="admission" href="admission.html">Admission <span
                 class="dropdown-arrow">&#9660;</span></a>
             <div class="dropdown">
-              <a href="admission.html#overview">Admission Overview</a>
-              <a href="admission.html#fees">Fee Structure</a>
+              <a href="admission-overview.html">Admission Overview</a>
+              <a href="fee-structure.html">Fee Structure</a>
+              <a href="school-rules.html">School Rules</a>
             </div>
           </div>
 
-          <div class="nav-item"><a class="nav-link" data-nav="cbse-details" href="cbse-details.html">CBSE Details</a>
+          <div class="nav-item">
+            <a class="nav-link" data-nav="cbse-details" href="cbse-details.html">CBSE Details</a>
           </div>
-          <div class="nav-item"><a class="nav-link" data-nav="facilities" href="facilities.html">Facilities</a></div>
+          <div class="nav-item">
+            <a class="nav-link" data-nav="facilities" href="facilities.html">Facilities</a>
+          </div>
           <div class="nav-item nav-item--has-dropdown">
-            <a class="nav-link" data-nav="download" href="download.html">DOWNLOAD <span
+            <a class="nav-link" data-nav="download" href="download.html">Download <span
                 class="dropdown-arrow">&#9660;</span></a>
             <div class="dropdown">
-              <a href="download.html#tc-admin">TC Admin Login</a>
-              <a href="download.html#tc-verification">TC Verification</a>
-              <a href="download.html#syllabus">Syllabus</a>
-              <a href="download.html#calendar">School Calander</a>
+              <a href="tc-portal.html">TC Portal</a>
+              <a href="academic-resources.html">Academic Resources</a>
             </div>
           </div>
           <div class="nav-item">
@@ -151,6 +153,7 @@
         </div>
       </div>
     </nav>
+
   </header>
 
 
@@ -174,55 +177,28 @@
         </div>
 
         <div class="disclosure-grid">
-          <article class="doc-item glass reveal">
+          <article class="doc-item glass reveal" id="tc">
             <div class="doc-icon">
               <svg viewBox="0 0 24 24">
                 <path
                   d="M12,17A2,2 0 0,0 14,15C14,13.89 13.11,13 12,13A2,2 0 0,0 10,15C10,16.11 10.89,17 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z" />
               </svg>
             </div>
-            <h3>TC Admin Portal</h3>
-            <p>Secure administrative gateway for processing and managing student transfer certificates. Authorized
-              access only.</p>
-            <a href="#" class="button button--ghost button--sm">Admin Login</a>
+            <h3>TC Portal</h3>
+            <p>Access the administrative gateway for certificate management or verify issued transfer certificates
+              online.</p>
+            <a href="tc-portal.html" class="button button--ghost button--sm">Open TC Portal</a>
           </article>
 
-          <article class="doc-item glass reveal">
-            <div class="doc-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M15.5,14L20.5,19L19,20.5L14,15.5V14.71L13.73,14.43C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.43,13.73L14.71,14H15.5M9.5,14C11.99,14 14,11.99 14,9.5C14,7.01 11.99,5 9.5,5C7.01,5 5,7.01 5,9.5C5,11.99 7.01,14 9.5,14Z" />
-              </svg>
-            </div>
-            <h3>TC Verification</h3>
-            <p>Public verification tool for validating transfer certificates issued by the institution. Ensure record
-              authenticity.</p>
-            <a href="#" class="button button--ghost button--sm">Verify Now</a>
-          </article>
-
-          <article class="doc-item glass reveal">
+          <article class="doc-item glass reveal" id="academic">
             <div class="doc-icon">
               <svg viewBox="0 0 24 24">
                 <path d="M13,12H11V10H13M13,16H11V14H13M17,4H15V3H13V4H11V3H9V4H7V3H5V21H19V3H17M17,19H7V6H17V19Z" />
               </svg>
             </div>
-            <h3>Academic Syllabus</h3>
-            <p>Download class-wise detailed syllabus, learning objectives, and academic roadmaps for the current
-              session.</p>
-            <a href="#" class="button button--ghost button--sm">Browse Syllabus</a>
-          </article>
-
-          <article class="doc-item glass reveal">
-            <div class="doc-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.11,3 19,3H18V1M17,12H12V17H17V12Z" />
-              </svg>
-            </div>
-            <h3>School Calendar</h3>
-            <p>Stay updated with the latest event schedule, holiday list, and important institutional dates for the
-              academic year.</p>
-            <a href="#" class="button button--ghost button--sm">Download Calendar</a>
+            <h3>Academic Resources</h3>
+            <p>Download the latest academic syllabus, learning objectives, and the comprehensive school calendar.</p>
+            <a href="academic-resources.html" class="button button--ghost button--sm">View Resources</a>
           </article>
         </div>
       </div>
@@ -310,6 +286,7 @@
     </div>
   </footer>
   <script src="script.js"></script>
+
 </body>
 
 </html>

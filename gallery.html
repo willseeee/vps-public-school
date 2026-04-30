@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -77,7 +77,7 @@
           </div>
         </a>
         <div class="header-actions">
-          <a class="button button--sm" href="#" target="_blank" rel="noreferrer">Enroll Now</a>
+          <a href="registration.html" class="button button--sm">Enroll Now</a>
           <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
             <span></span>
             <span></span>
@@ -97,34 +97,36 @@
             <a class="nav-link" data-nav="about" href="about.html">About Us <span
                 class="dropdown-arrow">&#9660;</span></a>
             <div class="dropdown">
-              <a href="about.html#school">About the School</a>
-              <a href="about.html#mission">Mission & Vision</a>
-              <a href="about.html#manager">Manager Message</a>
-              <a href="about.html#principal">Principal Message</a>
-              <a href="about.html#society">VPS Siksha Samity</a>
-              <a href="about.html#disclosure">Mandatory Public Disclosure</a>
+              <a href="about.html">About the School</a>
+              <a href="mission-vision.html">Mission & Vision</a>
+              <a href="manager-message.html">Manager Message</a>
+              <a href="principal-message.html">Principal Message</a>
+              <a href="vps-samity.html">VPS Siksha Samity</a>
+              <a href="cbse-details.html">Public Disclosure</a>
             </div>
           </div>
           <div class="nav-item nav-item--has-dropdown">
             <a class="nav-link" data-nav="admission" href="admission.html">Admission <span
                 class="dropdown-arrow">&#9660;</span></a>
             <div class="dropdown">
-              <a href="admission.html#overview">Admission Overview</a>
-              <a href="admission.html#fees">Fee Structure</a>
+              <a href="admission-overview.html">Admission Overview</a>
+              <a href="fee-structure.html">Fee Structure</a>
+              <a href="school-rules.html">School Rules</a>
             </div>
           </div>
 
-          <div class="nav-item"><a class="nav-link" data-nav="cbse-details" href="cbse-details.html">CBSE Details</a>
+          <div class="nav-item">
+            <a class="nav-link" data-nav="cbse-details" href="cbse-details.html">CBSE Details</a>
           </div>
-          <div class="nav-item"><a class="nav-link" data-nav="facilities" href="facilities.html">Facilities</a></div>
+          <div class="nav-item">
+            <a class="nav-link" data-nav="facilities" href="facilities.html">Facilities</a>
+          </div>
           <div class="nav-item nav-item--has-dropdown">
-            <a class="nav-link" data-nav="download" href="download.html">DOWNLOAD <span
+            <a class="nav-link" data-nav="download" href="download.html">Download <span
                 class="dropdown-arrow">&#9660;</span></a>
             <div class="dropdown">
-              <a href="download.html#tc-admin">TC Admin Login</a>
-              <a href="download.html#tc-verification">TC Verification</a>
-              <a href="download.html#syllabus">Syllabus</a>
-              <a href="download.html#calendar">School Calander</a>
+              <a href="tc-portal.html">TC Portal</a>
+              <a href="academic-resources.html">Academic Resources</a>
             </div>
           </div>
           <div class="nav-item">
@@ -151,6 +153,7 @@
         </div>
       </div>
     </nav>
+
   </header>
 
 
@@ -173,55 +176,324 @@
             news highlights.</p>
         </div>
 
-        <div class="grid grid--2">
-          <article class="card glass reveal" style="padding: 1.5rem;">
-            <div class="card-media" style="margin: 0 0 1.5rem;">
-              <img src="assets/facilities/school photos/DSC01192.jpg" alt="Photo Gallery">
-            </div>
-            <div style="padding: 0 1rem 1rem;">
-              <h3 class="text-gradient">Photo Showcase</h3>
-              <p>Relive the memories of annual functions, academic milestones, and campus life through our extensive
-                photo albums.</p>
-              <a href="#photos" class="button button--sm" style="margin-top: 1.5rem;">Explore Photos</a>
+        <div class="grid grid--3">
+          <article class="card glass reveal" style="padding: 1rem;">
+            <div class="card-media" style="margin: 0 0 1rem; cursor: pointer;" onclick="openLightbox(0)">
+              <img src="assets/facilities/school photos/DSC01192.jpg" alt="Photo Gallery" class="gallery-thumb">
             </div>
           </article>
 
-          <article class="card glass reveal" style="padding: 1.5rem;">
-            <div class="card-media" style="margin: 0 0 1.5rem;">
-              <img src="assets/facilities/01. Auditoriam.jpg" alt="Video Gallery">
-            </div>
-            <div style="padding: 0 1rem 1rem;">
-              <h3 class="text-gradient">Video Highlights</h3>
-              <p>Experience the energy of our school assemblies, cultural performances, and expert talks through our
-                video library.</p>
-              <a href="#video" class="button button--sm" style="margin-top: 1.5rem;">Watch Videos</a>
+          <article class="card glass reveal" style="padding: 1rem;">
+            <div class="card-media" style="margin: 0 0 1rem; cursor: pointer;" onclick="openLightbox(1)">
+              <img src="assets/facilities/01. Auditoriam.jpg" alt="Auditorium" class="gallery-thumb">
             </div>
           </article>
 
-          <article class="card glass reveal" style="padding: 1.5rem;">
-            <div class="card-media" style="margin: 0 0 1.5rem;">
-              <img src="assets/facilities/02 MPH Hall.jpg" alt="Events & Activities">
-            </div>
-            <div style="padding: 0 1rem 1rem;">
-              <h3 class="text-gradient">Events & Activities</h3>
-              <p>Stay updated with our latest workshops, sports competitions, and student-led initiatives on campus.</p>
-              <a href="#events" class="button button--sm" style="margin-top: 1.5rem;">See Events</a>
+          <article class="card glass reveal" style="padding: 1rem;">
+            <div class="card-media" style="margin: 0 0 1rem; cursor: pointer;" onclick="openLightbox(2)">
+              <img src="assets/facilities/06. School Gallery.jpg" alt="School Gallery" class="gallery-thumb">
             </div>
           </article>
 
-          <article class="card glass reveal" style="padding: 1.5rem;">
-            <div class="card-media" style="margin: 0 0 1.5rem;">
-              <img src="assets/facilities/06. School Gallery.jpg" alt="School News">
+          <article class="card glass reveal" style="padding: 1rem;">
+            <div class="card-media" style="margin: 0 0 1rem; cursor: pointer;" onclick="openLightbox(3)">
+              <img src="assets/facilities/10. Class Room 01.jpg" alt="Classroom" class="gallery-thumb">
             </div>
-            <div style="padding: 0 1rem 1rem;">
-              <h3 class="text-gradient">School News</h3>
-              <p>The latest announcements, media features, and newsletters from the heart of Varanasi Public School.</p>
-              <a href="#news" class="button button--sm" style="margin-top: 1.5rem;">Read News</a>
+          </article>
+
+          <article class="card glass reveal" style="padding: 1rem;">
+            <div class="card-media" style="margin: 0 0 1rem; cursor: pointer;" onclick="openLightbox(4)">
+              <img src="assets/facilities/05 Library.jpg" alt="Library" class="gallery-thumb">
+            </div>
+          </article>
+
+          <article class="card glass reveal" style="padding: 1rem;">
+            <div class="card-media" style="margin: 0 0 1rem; cursor: pointer;" onclick="openLightbox(5)">
+              <img src="assets/facilities/school photos/vps building.jpg" alt="School Building" class="gallery-thumb">
             </div>
           </article>
         </div>
+
+        <div id="photos" style="padding-top: 4rem;">
+          <h3 class="text-gradient mb-4">Event Photos</h3>
+          <div class="grid grid--4 gallery-grid">
+            <div class="gallery-item reveal" onclick="openLightbox(6)">
+              <img src="assets/facilities/school photos/Front Office (1).jpg" alt="Event 1">
+              <div class="gallery-overlay"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(7)">
+              <img src="assets/facilities/10. Class Room 02.jpg" alt="Event 2">
+              <div class="gallery-overlay"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(8)">
+              <img src="assets/facilities/computer lab/04. PGT Computer  Lab.jpg" alt="Event 3">
+              <div class="gallery-overlay"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg></div>
+            </div>
+            <div class="gallery-item reveal" onclick="openLightbox(9)">
+              <img src="assets/facilities/biology lab/08 Bio Lab 01.jpg" alt="Event 4">
+              <div class="gallery-overlay"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="video" style="padding-top: 4rem;">
+          <h3 class="text-gradient mb-4">Video Highlights</h3>
+          <div class="grid grid--2 gallery-grid">
+            <div class="card glass reveal" style="padding: 0.5rem; overflow: hidden;">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/rnvLDK0zgCE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 8px;"></iframe>
+            </div>
+            <div class="card glass reveal" style="padding: 0.5rem; overflow: hidden;">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/sytoZ20LPz4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 8px;"></iframe>
+            </div>
+            <div class="card glass reveal" style="padding: 0.5rem; overflow: hidden;">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/XzS_o0-L7eY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 8px;"></iframe>
+            </div>
+            <div class="card glass reveal" style="padding: 0.5rem; overflow: hidden;">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/kY31R97rF-E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 8px;"></iframe>
+            </div>
+            <div class="card glass reveal" style="padding: 0.5rem; overflow: hidden; grid-column: span 2;">
+              <iframe width="100%" height="450" src="https://www.youtube.com/embed/IyEtxW72sOM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 8px;"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+      <button class="lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+      <button class="lightbox-next" onclick="changeImage(1)">&#10095;</button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Enlarged view">
+      </div>
+    </div>
+
+    <style>
+      .gallery-thumb {
+        transition: transform 0.3s ease;
+      }
+
+      .card-media:hover .gallery-thumb {
+        transform: scale(1.05);
+      }
+
+      .gallery-grid {
+        gap: 1.5rem;
+      }
+
+      .gallery-item {
+        position: relative;
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        cursor: pointer;
+        aspect-ratio: 4/3;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(26, 42, 68, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .gallery-overlay svg {
+        width: 40px;
+        height: 40px;
+        fill: white;
+        transform: scale(0.5);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.1);
+      }
+
+      .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+      }
+
+      .gallery-item:hover .gallery-overlay svg {
+        transform: scale(1);
+      }
+
+      /* Lightbox Styles */
+      .lightbox {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(8px);
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        animation: fadeIn 0.3s ease;
+      }
+
+      .lightbox-content {
+        max-width: 90%;
+        max-height: 90vh;
+        position: relative;
+      }
+
+      .lightbox-content img {
+        max-width: 100%;
+        max-height: 90vh;
+        border-radius: 8px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        animation: zoomIn 0.3s ease;
+      }
+
+      .close-lightbox {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+        line-height: 1;
+        z-index: 10000;
+      }
+
+      .lightbox-prev,
+      .lightbox-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: white;
+        padding: 1.5rem 1rem;
+        cursor: pointer;
+        font-size: 2rem;
+        border-radius: 4px;
+        transition: background 0.3s;
+        z-index: 10000;
+      }
+
+      .lightbox-prev:hover,
+      .lightbox-next:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .lightbox-prev {
+        left: 2rem;
+      }
+
+      .lightbox-next {
+        right: 2rem;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0.9);
+          opacity: 0;
+        }
+
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <script>
+      let currentImgIndex = 0;
+      const images = [
+        'assets/facilities/school photos/DSC01192.jpg',
+        'assets/facilities/01. Auditoriam.jpg',
+        'assets/facilities/06. School Gallery.jpg',
+        'assets/facilities/10. Class Room 01.jpg',
+        'assets/facilities/05 Library.jpg',
+        'assets/facilities/school photos/vps building.jpg',
+        'assets/facilities/school photos/Front Office (1).jpg',
+        'assets/facilities/10. Class Room 02.jpg',
+        'assets/facilities/computer lab/04. PGT Computer  Lab.jpg',
+        'assets/facilities/biology lab/08 Bio Lab 01.jpg'
+      ];
+
+      function openLightbox(index) {
+        currentImgIndex = index;
+        document.getElementById('lightbox-img').src = images[currentImgIndex];
+        document.getElementById('lightbox').style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Disable scroll
+      }
+
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable scroll
+      }
+
+      function changeImage(step) {
+        currentImgIndex += step;
+        if (currentImgIndex >= images.length) currentImgIndex = 0;
+        if (currentImgIndex < 0) currentImgIndex = images.length - 1;
+        document.getElementById('lightbox-img').src = images[currentImgIndex];
+      }
+
+      // Close on Esc key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') changeImage(1);
+        if (e.key === 'ArrowLeft') changeImage(-1);
+      });
+
+      // Close on click outside
+      document.getElementById('lightbox').addEventListener('click', (e) => {
+        if (e.target.id === 'lightbox') closeLightbox();
+      });
+    </script>
   </main>
   <footer class="footer">
     <div class="container">
@@ -305,6 +577,7 @@
     </div>
   </footer>
   <script src="script.js"></script>
+
 </body>
 
 </html>
