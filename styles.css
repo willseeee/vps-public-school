@@ -188,6 +188,45 @@ img {
   gap: 1.5rem;
 }
 
+.header-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  transition: color 0.3s;
+}
+
+.header-link:hover {
+  color: var(--secondary);
+}
+
+.header-link svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .header-link span {
+    display: none;
+  }
+  .header-actions {
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-actions {
+    gap: 1rem;
+  }
+  .header-link svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 /* Sticky Navbar */
 .navbar {
   background: var(--primary);
