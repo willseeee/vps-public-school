@@ -45,8 +45,6 @@ if (navToggle && navMenu) {
     link.addEventListener("click", () => {
       navMenu.classList.remove("is-open");
       navToggle.setAttribute("aria-expanded", "false");
-      navItems.forEach(item => item.classList.remove("is-open"));
-    });
   });
 }
 
