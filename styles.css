@@ -145,6 +145,11 @@ img {
   border-bottom: 1px solid var(--line);
 }
 
+.brand img {
+  height: 55px;
+  transition: height 0.4s ease;
+}
+
 .brand-bar__wrap {
   display: flex;
   justify-content: space-between;
@@ -251,14 +256,54 @@ img {
   }
 }
 
-/* Sticky Navbar */
+/* Sticky Header */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.topbar {
+  transition: height 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
+  overflow: hidden;
+}
+
+.brand-bar {
+  transition: padding 0.4s ease;
+}
+
+/* Scrolled State */
+.main-header--scrolled .topbar {
+  height: 0;
+  opacity: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.main-header--scrolled .brand-bar {
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-header--scrolled .brand img {
+  height: 40px;
+}
+
+/* Navbar stays within header */
 .navbar {
   background: var(--primary);
   padding: 0;
-  position: sticky;
-  top: 0;
   z-index: 999;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-header--scrolled .navbar {
+  background: rgba(0, 33, 71, 0.98);
 }
 
 .navbar__wrap {
