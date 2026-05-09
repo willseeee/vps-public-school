@@ -89,13 +89,14 @@ function goToSlide(n) {
 // Initialize
 initSlider();
 
-// Header scroll effect
+// Header scroll effect with hysteresis to prevent jittering
 const header = document.querySelector(".main-header");
 if (header) {
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
+    const scrollPos = window.scrollY;
+    if (scrollPos > 100) {
       header.classList.add("main-header--scrolled");
-    } else {
+    } else if (scrollPos < 40) {
       header.classList.remove("main-header--scrolled");
     }
   });

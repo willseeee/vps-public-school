@@ -264,33 +264,40 @@ img {
   width: 100%;
   background: white;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .topbar {
-  transition: height 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
+  transition: all 0.4s ease;
   overflow: hidden;
+  max-height: 50px; /* Adjust based on your topbar height */
 }
 
 .brand-bar {
-  transition: padding 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 /* Scrolled State */
+.main-header--scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 .main-header--scrolled .topbar {
-  height: 0;
+  max-height: 0;
   opacity: 0;
-  margin: 0;
+  margin-top: -40px; /* Slide it up */
   pointer-events: none;
 }
 
 .main-header--scrolled .brand-bar {
-  padding: 0.5rem 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 0.6rem 0;
 }
 
 .main-header--scrolled .brand img {
-  height: 40px;
+  height: 45px;
 }
 
 /* Navbar stays within header */
@@ -298,7 +305,6 @@ img {
   background: var(--primary);
   padding: 0;
   z-index: 999;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1851,6 +1857,150 @@ h3,
   transform: translateY(-10px);
   border-color: var(--secondary);
   box-shadow: 0 20px 40px rgba(0, 33, 71, 0.1);
+}
+
+/* Facility Collage Layout */
+.facility-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin-top: 5rem;
+}
+
+.facility-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.facility-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.facility-info {
+  flex: 1;
+  position: sticky;
+  top: 150px;
+}
+
+.facility-info h4 {
+  color: #d32f2f; /* Red accent for subheaders */
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.facility-info h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: var(--primary);
+}
+
+.facility-info p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.facility-collage {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.facility-collage img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.facility-collage img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.facility-collage img.span-2 {
+  grid-column: span 2;
+  height: 350px;
+}
+
+@media (max-width: 1120px) {
+  .facility-item, .facility-item:nth-child(even) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .facility-info {
+    position: static;
+  }
+  
+  .facility-info h3 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Modern Facility Grid */
+.modern-facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 6rem;
+}
+
+.modern-facility-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(0,0,0,0.02);
+}
+
+.modern-facility-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 30px 60px rgba(0, 33, 71, 0.08);
+}
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  transition: all 0.4s ease;
+}
+
+.modern-facility-card:hover .card-icon {
+  background: var(--primary);
+}
+
+.modern-facility-card svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--primary);
+  transition: fill 0.3s ease;
+}
+
+.modern-facility-card:hover svg {
+  fill: white;
+}
+
+.modern-facility-card h4 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .doc-icon {
